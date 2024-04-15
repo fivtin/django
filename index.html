@@ -291,13 +291,13 @@
                             <form>
                                 <div class="mb-3">
                                     <label for="exampleInputName1" class="form-label">Имя</label>
-                                    <input type="text" class="form-control" id="exampleInputName1"
+                                    <input name="name" type="text" class="form-control" id="exampleInputName1"
                                            aria-describedby="nameHelp">
 
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Ваш email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                    <input name="email" type="email" class="form-control" id="exampleInputEmail1"
                                            aria-describedby="emailHelp">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
@@ -310,39 +310,110 @@
         <div class="row">
             <h2>FAQ</h2>
             <div class="card mb-1">
-                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseDelivery1" role="button"
-                   aria-expanded="false" aria-controls="collapseDelivery1">
-                   Как доставить?
+                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseDelivery1" role="button"
+                        aria-expanded="false" aria-controls="collapseDelivery1">
+                    Как доставить?
                 </button>
                 <div class="card-body collapse" id="collapseDelivery1">
-                    Как осуществляется доставка. Как осуществляется доставка. Как осуществляется доставка. Как осуществляется доставка.
-                    Как осуществляется доставка. Как осуществляется доставка. Как осуществляется доставка. Как осуществляется доставка.
-                    Как осуществляется доставка. Как осуществляется доставка. Как осуществляется доставка. Как осуществляется доставка.
+                    Как осуществляется доставка. Как осуществляется доставка. Как осуществляется доставка. Как
+                    осуществляется доставка.
+                    Как осуществляется доставка. Как осуществляется доставка. Как осуществляется доставка. Как
+                    осуществляется доставка.
+                    Как осуществляется доставка. Как осуществляется доставка. Как осуществляется доставка. Как
+                    осуществляется доставка.
                 </div>
             </div>
             <div class="card mb-1">
 
-                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseBuy" role="button"
-                   aria-expanded="false" aria-controls="collapseBuy">
-                   Как купить?
+                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseBuy" role="button"
+                        aria-expanded="false" aria-controls="collapseBuy">
+                    Как купить?
                 </button>
                 <div class="card-body collapse" id="collapseBuy">
-                    Для покупки нужно... Для покупки нужно... Для покупки нужно... Для покупки нужно... Для покупки нужно...
-                    Для покупки нужно... Для покупки нужно... Для покупки нужно... Для покупки нужно... Для покупки нужно...
+                    Для покупки нужно... Для покупки нужно... Для покупки нужно... Для покупки нужно... Для покупки
+                    нужно...
+                    Для покупки нужно... Для покупки нужно... Для покупки нужно... Для покупки нужно... Для покупки
+                    нужно...
                 </div>
             </div>
             <div class="card mb-1">
-                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseWarranty" role="button"
-                   aria-expanded="false" aria-controls="collapseWarranty">
-                   Какая гарантия?
+                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseWarranty" role="button"
+                        aria-expanded="false" aria-controls="collapseWarranty">
+                    Какая гарантия?
                 </button>
                 <div class="card-body collapse" id="collapseWarranty">
-                    Гарантия нулевая... Это некачественный товар.. Гарантия нулевая... Это некачественный товар.. Гарантия нулевая...
-                    Гарантия нулевая... Это некачественный товар.. Гарантия нулевая... Это некачественный товар.. Это некачественный товар..
+                    Гарантия нулевая... Это некачественный товар.. Гарантия нулевая... Это некачественный товар..
+                    Гарантия нулевая...
+                    Гарантия нулевая... Это некачественный товар.. Гарантия нулевая... Это некачественный товар.. Это
+                    некачественный товар..
                 </div>
             </div>
         </div>
-
+        <div class="row">
+            <h2 class="text-center mt-5 mb-2">Товары в заказе</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Название</th>
+                    <th scope="col">Цена за шт.</th>
+                    <th scope="col">Кол-во</th>
+                    <th scope="col">Сумма</th>
+                    <th scope="col">Статус</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table-primary">
+                    <th scope="row">1</th>
+                    <td>Яблоки</td>
+                    <td>130</td>
+                    <td>3</td>
+                    <td>390</td>
+                    <td>
+                        <div class="alert alert-primary" data-bs-theme="dark" role="alert">
+                            Новый
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">2</th>
+                    <td>Молоко</td>
+                    <td>95</td>
+                    <td>1</td>
+                    <td>95</td>
+                    <td>
+                        <div class="alert alert-warning" data-bs-theme="dark" role="alert">
+                        В обработке
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">3</th>
+                    <td>Колбаса</td>
+                    <td>800</td>
+                    <td>1.4</td>
+                    <td>1120</td>
+                    <td>
+                        <div class="alert alert-success" data-bs-theme="dark" role="alert">
+                            Обработан
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">4</th>
+                    <td>Бананы</td>
+                    <td>150</td>
+                    <td>1.8</td>
+                    <td>270</td>
+                    <td>
+                        <div class="alert alert-danger" data-bs-theme="dark" role="alert">
+                            Удален
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 </main>
